@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .article{
+            background-image: url(./dotted-map-bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 10px;
+        }
+        .f{
+            width: 400px;
+            padding: 150px 0px 100px 50px;
+        }
+        .f1{
+            width: 50%;
+            padding-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            row-gap: 30px;
+            column-gap: 10px;
+        }
+        .index1 { grid-area: a; }
+        .index2 { grid-area: b; }
+        .index3 { grid-area: c; }
+        .index4 { grid-area: d; }
+        .index5 { grid-area: e; }
+        .index6 { grid-area: f; }
+        .f2{
+            height: 100vh;
+            margin-left: -300px;
+            padding: 200px 50px 100px 0px;
+            display: grid;
+            grid-template-areas: 
+            'a b'
+            'c d'
+            'e e'
+            'f f';
+            column-gap: 20px;
+            row-gap:30px;
+        }
+        footer{
+            padding: 60px 20px 60px 60px;
+            position: -webkit-sticky;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-image: url(./banner-bg.jpg);
+            color: white;
+            display: inline-block;
+            justify-content: space-evenly;
+            }
+        .social-icons>p{
+            padding-right: 600px;
+            display: inline;
+            }
+        .social-icons a{
+            height: 30px;
+            width: 30px;
+            padding:1px;
+            background-color:white;
+            border-radius: 50%;
+            text-align: center;
+            color:rgb(101, 221, 101);
+            line-height:30px;
+            font-size:15px;
+            margin: 0 5px;
+            text-decoration:none;
+        }
+        @media screen and (max-width:786px) {
+            .article{
+                display: block;
+                text-align: center;
+            }
+            .f1 img{
+                margin-top: -30px;
+                margin-right: -90px;
+                height: 100px;
+                width: 100px;
+            }
+            
+            .f2{
+                height: 400px;
+                padding: 40px;
+                margin-left:0px;
+            }
+            .social-icons{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+</body>
+</html>

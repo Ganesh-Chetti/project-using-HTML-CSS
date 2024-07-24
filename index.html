@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./index1.css">
+    <link rel="stylesheet" href="./index2.css">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        header{
+            height: 100vh;
+            width: 100vw;
+            background-image: url(./slide-02.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-bottom: 50px;
+            display: inline-block;
+            position: relative;
+        }
+        .logo{
+            padding-left: 40px;
+            padding-top: 10px;
+            color: white;
+            float: left;
+        }
+        nav{
+            padding-top: 10px;
+            padding-right: 20px;
+            float: right;
+            font-size: 20px;
+        }
+        nav ul li{
+            display: inline-block;
+            color: white;
+            font-weight: 600;
+            padding: 10px;
+        }
+        .toggle{
+            display: none;
+            width: 35px;
+            position: absolute;
+            right: 80px;
+            top: 40px;
+        }
+        .toggle span{
+            display: inline-block;
+            width: 100%;
+            height: 2px;
+            background-color: #000;
+            float: right;
+            margin-bottom: 8px ;
+        }
+        .child2{ 
+            opacity: .6;
+        }
+        .child>button{
+            color: rgb(53, 247, 53);
+            width: 30px;
+            height: 30px;
+        }
+        .main>p{
+            color: white;
+            font: 1em sans-serif;
+        }
+        .main1>p{
+            color: white;
+            font: 2em sans-serif;
+        }
+        .main{
+            padding-left: 30px;
+            display: flex;
+            position: relative;
+            left: 25%;
+            top: 300px;
+
+        }
+        .main1{
+            display: flex;
+            position: relative;
+            left: 25%;
+            top:320px;
+
+        }
+        .main2{
+            margin-left: 40px;
+            width: 300px;
+            padding: 20px 0px  0px 0px;
+            display: flex;
+            position: relative;
+            left: 40%;
+            top:330px;
+        }
+        .main3{
+            padding-left: 10px;
+
+        }
+        .main2>button{
+            border-radius: 30px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background-color: transparent;
+            color: white;
+            border: 2px solid;
+        }
+        .main3>button{
+            border-radius: 30px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background-color: white;
+            color:rgb(54, 164, 81);
+            border: 2px solid white;
+        }
+        .main4{
+            position: relative;
+            top: 220px;
+            display: grid;
+            justify-content: right;
+        }
+        .abcd>.main5{
+            position: relative;
+            top: 160px;
+            display: grid;
+            justify-content: start; 
+        } 
+        
+        @media screen and (max-width: 768px) {
+            .toggle{
+                display: block;
+            }
+            nav{
+                display: none;
+            }
+            .main,.main1{
+                display: flex;
+                position: relative;
+                left: 0;
+                top: 300px;
+            }
+            .main2{
+                display: flex;
+                position: relative;
+                left: 30%;
+                top: 300px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="logo"><h1>.BREEZEED</h1></div>
+        <nav>
+        <ul class="child">
+            <li class="child2">HOME</li>
+            <li>ABOUT</li>
+            <li>PROJECTS</li>
+            <li>DROP DOWN</li>
+            <li class="child2">CONTACT US</li>
+            <button><i class="fa fa-search"></i></button>
+        </ul>
+    </nav>
+        <div class="abcd">
+        <div class="main"><p>INTEGATED MARKETING MEDIA</p></div>
+        <div class="main1"><P>Best Digital Marketing</P></div>
+        <div class="main2"><button type="button">&nbsp;&nbsp;READ MORE &nbsp;</button>
+        <div class="main3"><button type="button">&nbsp;&nbsp;TAKE ACTION &nbsp;</button></div></div>
+        <div class="main4"><img src="./next.png" alt="" height="30px"></div>
+        <div class="main5"><img src="./prev.png" alt="" height="30px" width="20px"></div>
+    </div>
+    </header>
+   
+    <main>
+        <div class="item">
+            <div class="hi1">
+                <div class="sub1"><p style="color:green; " >ABOUT US</p><br>
+                <h1>We work with top brands and startups </h1>
+                <div class="sub11">
+                <span class="g"><img src="./service-item-01.png" alt=""></span><span class="g1">TOP NOTCH</span>
+                <span class="g"><img src="./service-item-01.png" alt=""></span><span class="g1">ROBUST</span>
+                <span class="g"><img src="./contact-info-03.png" alt=""></span><span class="g1">RELIABLE</span>
+                <span class="g"><img src="./contact-info-03.png" alt=""></span><span class="g1">UP-TO-DATE</span>
+                </div>
+                <button> LEARN MORE → </button>
+                </div>
+                <div class="sub2">
+                    <span class="k1"><p><a style="color: rgb(58, 194, 225);">Breezed HTML Template</a> is provided by TemplateMo for absolutely free of charge. You can download, edit and use this for your non-commercial and commercial websites.</p></span>
+                    <span class="k1"><p>Redistributing this template as a downloadable ZIP file on any template collection website is strictly prohibited. You will need to talk to us if you want to redistribute this template. Thank you.</p></span>
+                    <span class="k1"><p>This is a Bootstrap v4.3.1 CSS layout. Do you like it? You can feel free to <a style="color: rgb(58, 194, 225);">talk to us </a> if you have anything.</p></span>
+                </div>
+            </div>
+            <div class="hi2">
+                <span><img src="./features-icon-1.png" alt=""></span>
+                <span class="int"><h3>INITIAL WORK</h3><br><br>Proin euismod sem ut diam ultricies, ut faucibus velit ultricies. Nam eu turpis<br> quam Duis ac condimentum eros. <br><br><br><h4>LEARN MORE →</h4></span>
+                <span><img src="./features-icon-1.png" alt=""></span>
+                <span class="int"><h3>MASTER PLANNING</h3><br><br>Proin euismod sem ut diam ultricies, ut faucibus velit ultricies. Nam eu turpis <br>quam Duis ac condimentum eros. <br><br><br><h4>LEARN MORE →</h4></span>
+                <span><img src="./features-icon-1.png" alt=""></span>
+                <span class="int"><h3>SMOOTH EXECUTION</h3> <br><br>Proin euismod sem ut diam ultricies, ut faucibus velit uitricies. Nam eu turpis <br>quam. Duis ac condimentum eros. <br><br> <br><h4>LEARN MORE →</h4></span>
+            </div>
+        </div>
+        <div class="item1">
+            <span class="hello"><p>SUBSCRIBE NEWSLETTERS
+                <br><br>
+                <h1>Don't miss this chance!</h1>
+                <br>
+                Vivamus suscipit blandit nibh, in cursus mi. Proin vel blandit metus, et auctor elit. Vivamus tincidunt <br>tristique convallis. Ut nec odio vel arcu euismod semper nec ac sem.</p>
+                <input type="email" placeholder="Enter your email">
+                <input type="button" value="SUBSCRIBE NOW" style="margin-left: 40px; padding: 10px 20px 10px 20px; background-color: white; color: green;">
+            </span>
+        </div>
+        <div class="item2">
+            <span class="hey"> <p style="color: green;">OUR PROJECTS</p><br><br>
+                <h1>Some of our latest projects</h1><br><br><br><br>
+                <p style="color: green;">ALL</p><br><br>
+               <p>WEB DESIGN <br><br><br> WEB DEVELOPMENT <br><br><br> GRAPHICS <br><br><br> ARTWORKS</p></span>
+               <span class="heyhi">
+                <div><img src="./project-item-01.jpg" alt=""></div>
+                <div><img src="./project-item-02.jpg" alt=""></div>
+                <div><img src="./project-item-03.jpg" alt="" ></div>
+                <div><img src="./project-item-04.jpg" alt="" ></div>
+                <div><img src="./project-item-05.jpg" alt="" ></div>
+                <div><img src="./project-item-06.jpg" alt="" ></div>
+               </span>
+        </div>
+        <div class="item3">
+            <p>DIGITAL TEAM</p><br>
+            <H1>young and talented members</H1>
+            <span class="heyhello">
+            <div><img src="./member-item-06.jpg" alt=""><p><br><h3>.07 OLIVA SOFIE</h3> <br> WEBSITE ANALYST</p></div>
+            <div><img src="./member-item-01.jpg" alt=""><P><br><h3>.01 WHITE CHEESE</h3> <br> DIGITAL MARKETER</P></div>
+            <div><img src="./member-item-04.jpg" alt=""><P><br><h3>.02 SNOW MARY</h3><br>SITE ANALYST</P></div>
+            </span>
+            <span class="heyhello1">
+                <div></div>
+                <div></div>
+                <div></div>
+            </span>
+        </div>
+        </main>
+    
+        <article>
+            <div class="article">
+            <span class="f">
+            <p style="color: green;">CONTACT US</p><br><h1 style="font-size: 40px;">Feel free to keep in touch with us!</h1>
+            <div class="f1">
+            <div><img src="./contact-info-01.png" alt=""></div>
+            <div><p style="padding-top: 10px;">010-020-0850</p></div>
+            <div><img src="./contact-info-02.png" alt=""></div>
+            <div><p style="padding-top: 10px;">info@company.com</p></div>
+            <div><img src="./contact-info-03.png" alt=""></div>
+            <div><p style="padding-top: 10px;">www.company.com</p></div>
+            </div>
+            </span>
+            <span class="f2">
+                <input type="text" placeholder="Your Name" class="index1">
+                <input type="text" placeholder="Your Phone" class="index2">
+                <input type="email" placeholder="Your Email" class="index3">
+                <input type="text" placeholder="Subject" class="index4">
+                <textarea id="" name="" rows="8" cols="80" placeholder="Message" class="index5"></textarea>
+                <button style="background-color: green; color: white; border-radius: 50px; width: 200px; height: 40px; border: none;" class="index6">Send Message now →</button>
+            </span>
+        </div>
+        </article>
+        <footer>
+            <span class="social-icons">
+                <p>Copyright © 2020 Breezed Co., Ltd. - Design: TemplateMo</p>
+                FOLLOW US
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-dribbble"></a>
+            </span>
+        </footer>
+</body>
+</html>
